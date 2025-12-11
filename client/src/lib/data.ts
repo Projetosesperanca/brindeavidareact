@@ -1,4 +1,4 @@
-import heroImage from "@assets/generated_images/hero_image_of_personalized_sublimation_products.png";
+import heroImage from "@assets/generated_images/hero_image_of_personalized_gifts_with_rose_vintage_theme.png";
 import mugImage from "@assets/generated_images/custom_printed_ceramic_mug.png";
 import uniformImage from "@assets/generated_images/corporate_uniforms_polo_shirts.png";
 import schoolImage from "@assets/generated_images/school_uniforms_group.png";
@@ -8,11 +8,12 @@ import capImage from "@assets/generated_images/custom_baseball_cap.png";
 import bagImage from "@assets/generated_images/custom_tote_bag_lifestyle.png";
 
 export const companyInfo = {
-  name: "Sublime Art",
-  phone: "5511999999999", // Replace with actual number if provided, otherwise generic
-  email: "contato@sublimeart.com.br",
-  address: "Rua das Flores, 123 - Centro, Cidade - SP",
-  whatsappLink: (message: string) => `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`
+  name: "Brinde a Vida",
+  phone: "11961537124",
+  secondaryPhone: "1147050191",
+  email: "comercial@iusti.com.br",
+  address: "Rua das Flores, 123 - Centro, Cidade - SP", // Keeping placeholder if not provided
+  whatsappLink: (message: string) => `https://wa.me/5511961537124?text=${encodeURIComponent(message)}`
 };
 
 export const categories = [

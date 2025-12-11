@@ -22,8 +22,8 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <Link href="/">
-          <a className="font-heading font-bold text-2xl text-primary tracking-tight">
-            SUBLIME<span className="text-secondary">ART</span>
+          <a className="font-script font-bold text-3xl text-primary tracking-wide">
+            Brinde a Vida
           </a>
         </Link>
 

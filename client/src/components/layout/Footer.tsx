@@ -8,12 +8,12 @@ export function Footer() {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Brand */}
         <div className="space-y-4">
-          <h3 className="text-2xl font-heading font-bold text-white">
-            SUBLIME<span className="text-secondary">ART</span>
+          <h3 className="text-3xl font-script font-bold text-secondary">
+            Brinde a Vida
           </h3>
           <p className="text-slate-400 text-sm leading-relaxed">
-            Especialistas em transformar ideias em produtos únicos através da sublimação. 
-            Qualidade, pontualidade e dedicação em cada detalhe.
+            Presentes personalizados para eternizar momentos.
+            Qualidade, carinho e dedicação em cada detalhe.
           </p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-secondary transition-colors"><Instagram className="h-5 w-5" /></a>
