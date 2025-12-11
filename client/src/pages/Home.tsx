@@ -70,57 +70,19 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Categories */}
-      <Section>
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold font-heading mb-4 text-slate-900">Nossas Categorias</h2>
-          <p className="text-slate-600 max-w-2xl mx-auto">Explore nossa linha completa de produtos personalizados para você e sua empresa.</p>
-        </div>
-        
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          {categories.map((cat) => (
-            <Link key={cat.id} href={`/produtos?category=${cat.id}`}>
-              <a className="group relative aspect-square overflow-hidden rounded-xl bg-slate-100 block">
-                <img 
-                  src={cat.image} 
-                  alt={cat.name} 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 brightness-90 group-hover:brightness-100" 
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
-                  <span className="text-white font-bold text-sm md:text-base">{cat.name}</span>
-                </div>
-              </a>
-            </Link>
-          ))}
-        </div>
-      </Section>
-
       {/* Featured Products */}
       <Section className="bg-slate-50">
         <div className="flex justify-between items-end mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold font-heading mb-2 text-slate-900">Destaques</h2>
-            <p className="text-slate-600">Os queridinhos dos nossos clientes</p>
+            <p className="text-slate-600">Conheça nossos produtos especiais</p>
           </div>
-          <Link href="/produtos">
-            <Button variant="ghost" className="hidden md:flex gap-2 text-primary">
-              Ver todos <ArrowRight className="h-4 w-4" />
-            </Button>
-          </Link>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {featuredProducts.map((product) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
-        </div>
-        
-        <div className="mt-8 text-center md:hidden">
-           <Link href="/produtos">
-            <Button variant="outline" className="gap-2 w-full">
-              Ver todos produtos <ArrowRight className="h-4 w-4" />
-            </Button>
-          </Link>
         </div>
       </Section>
 
