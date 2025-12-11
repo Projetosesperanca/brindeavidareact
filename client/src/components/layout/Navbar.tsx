@@ -10,7 +10,6 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { href: "/", label: "Home" },
     { href: "/sobre", label: "Sobre Nós" },
     { href: "/produtos", label: "Produtos" },
     { href: "/fardamentos", label: "Fardamentos" },
