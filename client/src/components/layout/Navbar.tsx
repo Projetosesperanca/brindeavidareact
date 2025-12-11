@@ -30,14 +30,14 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav - Highlighted */}
-        <nav className="hidden md:flex items-center gap-2 bg-white/60 px-6 py-3 rounded-full border border-primary/20 shadow-sm backdrop-blur-sm">
+        <nav className="hidden md:flex items-center gap-4">
           {links.map((link) => (
             <Link key={link.href} href={link.href}>
               <a
-                className={`text-lg font-bold px-5 py-2 rounded-full transition-all ${
+                className={`text-lg font-bold px-6 py-2 rounded-xl transition-all shadow-sm border ${
                   location === link.href 
-                    ? "bg-primary text-white shadow-md transform scale-105" 
-                    : "text-foreground hover:bg-primary/10 hover:text-primary"
+                    ? "bg-primary text-white border-primary shadow-md scale-105" 
+                    : "bg-white text-foreground border-primary/10 hover:bg-primary hover:text-white hover:border-primary hover:shadow-md hover:-translate-y-0.5"
                 }`}
               >
                 {link.label}
