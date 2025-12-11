@@ -1,0 +1,167 @@
+Crie um website completo, moderno, responsivo e totalmente otimizado para SEO para uma empresa de brindes personalizados e fardamentos, especializada em sublimação, que produz:
+
+Canecas personalizadas
+
+Copos
+
+Bonés
+
+Camisetas
+
+Azulejos
+
+Almofadas
+
+Chaveiros
+
+Necessáries
+
+Bolsas
+
+Estojos
+
+Squeezes
+
+Mochilas
+
+Uniformes corporativos
+
+Fardamentos escolares
+
+E todos os produtos possíveis por sublimação
+
+🎯 Objetivo do site
+
+Criar um website que transmita profissionalismo, destaque a qualidade dos produtos e incentive pedidos via WhatsApp.
+
+🖥️ Especificações técnicas
+
+Criar exclusivamente em HTML e CSS.
+
+Layout moderno, elegante, minimalista e com animações suaves.
+
+100% responsivo.
+
+Links de contato via WhatsApp em todas as páginas.
+
+Imagens realistas (placeholder se necessário).
+
+Cores recomendadas: azul royal, branco, preto, amarelo dourado.
+
+Estrutura multipágina com foco em SEO.
+
+📄 Páginas obrigatórias
+1. Home
+
+Banner (hero) impactante
+
+Destaque das categorias
+
+Sessão de diferenciais
+
+Galeria de produtos
+
+Botão de WhatsApp em destaque
+
+2. Sobre Nós
+
+História
+
+Missão, visão e valores
+
+Diferenciais da empresa
+
+3. Produtos
+
+Criar uma página com categorias separadas:
+
+Canecas
+
+Copos
+
+Bonés
+
+Camisetas
+
+Azulejos
+
+Almofadas
+
+Chaveiros
+
+Necessáries
+
+Bolsas
+
+Estojos
+
+Squeezes
+
+Mochilas
+
+Uniformes / Fardamentos
+
+Outros itens sublimáveis
+
+Cada item deve incluir:
+
+Imagem
+
+Descrição
+
+Benefícios
+
+Botão "Solicitar orçamentos via WhatsApp"
+
+4. Página exclusiva: Fardamentos
+
+Uniformes empresariais
+
+Escolares
+
+Esportivos
+
+Tabela de tamanhos opcional
+
+Destaque de qualidade de tecido e personalização
+
+5. Galeria
+
+Grid de fotos dos trabalhos realizados
+
+6. Contato
+
+Formulário simples
+
+Link WhatsApp
+
+Endereço, telefone e e-mail
+
+📈 SEO Avançado
+
+Metatags completas
+
+Títulos estruturados (H1, H2, H3)
+
+Keywords principais:
+“brindes personalizados”, “fardamentos”, “sublimação”, “canecas personalizadas”, “bonés personalizados”, “necessáries personalizadas”, “bolsas sublimadas”, “estojos personalizados”.
+
+URLs amigáveis
+
+Conteúdo otimizado
+
+🎨 Design
+
+Cabeçalho fixo
+
+Hero full width
+
+Cards modernos
+
+Animações leves no hover
+
+Rodapé elegante
+
+✔️ ENTREGA
+
+Gerar todos os arquivos completos (HTML + CSS), com comentários no código e organização limpa.
