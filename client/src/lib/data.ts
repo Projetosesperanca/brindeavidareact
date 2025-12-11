@@ -7,6 +7,8 @@ import mousepadImage from "@assets/generated_images/personalized_mousepads_works
 import capImage from "@assets/generated_images/custom_caps_lifestyle.png";
 import tileImage from "@assets/generated_images/personalized_ceramic_tiles_for_memorial.png";
 import ecoImage from "@assets/generated_images/ecobags_and_agendas_set.png";
+import partyCupImage from "@assets/generated_images/personalized_party_cups_set.png";
+import plateImage from "@assets/generated_images/personalized_ceramic_decorative_plate.png";
 
 export const companyInfo = {
   name: "Brinde a Vida",
@@ -19,6 +21,8 @@ export const companyInfo = {
 
 export const categories = [
   { id: "canecas", name: "Canecas e Xícaras", image: mugImage },
+  { id: "copos", name: "Copos Personalizados", image: partyCupImage },
+  { id: "pratos", name: "Pratos Decorativos", image: plateImage },
   { id: "camisetas", name: "Camisetas", image: tshirtImage },
   { id: "almofadas", name: "Almofadas", image: cushionImage },
   { id: "etiquetas", name: "Etiquetas de Cetim", image: labelImage },
@@ -36,6 +40,22 @@ export const products = [
     image: mugImage,
     description: "Transforme cada gole em uma experiência única e afetuosa. Nossas canecas e xícaras de cerâmica premium são telas em branco prontas para receber sua arte, foto ou mensagem especial. Com acabamento impecável e brilho duradouro, elas não são apenas utensílios, mas veículos de emoção. Perfeitas para eternizar momentos em família, presentear colaboradores com elegância ou criar uma linha exclusiva de produtos para sua marca. Cada peça é tratada com carinho para garantir que a imagem permaneça vibrante, resistindo ao tempo e ao uso diário, assim como as memórias que elas carregam.",
     benefits: ["Material Cerâmica Premium AAA", "Design Exclusivo e Personalizado", "Alta Resistência e Durabilidade", "Presente Emocional e Funcional"]
+  },
+  {
+    id: 9,
+    name: "Copos Personalizados para Festas",
+    category: "Copos",
+    image: partyCupImage,
+    description: "Celebre com estilo e alegria! Nossos copos personalizados são o destaque de qualquer evento, trazendo cor e personalidade para festas de aniversário, casamentos, formaturas e confraternizações. Produzidos em material resistente e seguro, eles podem ser estampados com nomes, datas, frases divertidas ou o tema da sua festa. Além de decorativos, tornam-se uma lembrança durável que seus convidados levarão para casa, prolongando a memória daquele momento especial. A escolha perfeita para brindar à vida com exclusividade.",
+    benefits: ["Ideal para Festas e Eventos", "Material Resistente e Seguro", "Personalização Temática Completa", "Lembrança Útil e Divertida"]
+  },
+  {
+    id: 10,
+    name: "Pratos de Porcelana Decorativos",
+    category: "Pratos",
+    image: plateImage,
+    description: "Arte que decora e encanta. Nossos pratos de porcelana personalizados são verdadeiras obras de arte para embelezar sua casa ou presentear com sofisticação. Com bordas detalhadas e centro livre para personalização, eles são perfeitos para homenagens, comemorações de bodas, brasões de família ou fotos artísticas. Acompanham suporte para exposição, tornando-se o ponto focal de estantes e paredes. A queima da estampa garante brilho intenso e durabilidade eterna, transformando a porcelana em um legado de afeto.",
+    benefits: ["Porcelana de Alta Qualidade", "Peça de Decoração Sofisticada", "Perfeito para Homenagens", "Acompanha Suporte de Mesa/Parede"]
   },
   {
     id: 2,
@@ -96,5 +116,5 @@ export const products = [
 ];
 
 export const galleryImages = [
-  heroImage, mugImage, tshirtImage, cushionImage, labelImage, mousepadImage, capImage, tileImage, ecoImage
+  heroImage, mugImage, partyCupImage, plateImage, tshirtImage, cushionImage, labelImage, mousepadImage, capImage, tileImage, ecoImage
 ];
