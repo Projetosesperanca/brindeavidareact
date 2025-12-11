@@ -1,0 +1,62 @@
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { companyInfo } from "@/lib/data";
+import { MessageCircle, Check } from "lucide-react";
+
+interface ProductCardProps {
+  product: {
+    id: number;
+    name: string;
+    category: string;
+    image: string;
+    description: string;
+    benefits: string[];
+  };
+}
+
+export function ProductCard({ product }: ProductCardProps) {
+  return (
+    <Card className="overflow-hidden group hover:shadow-xl transition-all duration-300 border-none bg-white shadow-sm h-full flex flex-col">
+      <div className="relative aspect-square overflow-hidden bg-slate-100">
+        <img
+          src={product.image}
+          alt={product.name}
+          className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+        />
+        <Badge className="absolute top-3 right-3 bg-primary text-white font-semibold shadow-sm">
+          {product.category}
+        </Badge>
+      </div>
+      <CardHeader className="pb-2">
+        <CardTitle className="text-xl font-heading font-bold text-slate-900 group-hover:text-primary transition-colors">
+          {product.name}
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="flex-grow">
+        <p className="text-slate-600 text-sm mb-4 line-clamp-2">{product.description}</p>
+        <ul className="space-y-1">
+          {product.benefits.slice(0, 3).map((benefit, i) => (
+            <li key={i} className="flex items-center text-xs text-slate-500">
+              <Check className="h-3 w-3 text-secondary mr-2 flex-shrink-0" />
+              {benefit}
+            </li>
+          ))}
+        </ul>
+      </CardContent>
+      <CardFooter className="pt-0">
+        <a
+          href={companyInfo.whatsappLink(`Olá, gostaria de um orçamento para o produto: ${product.name}`)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full"
+        >
+          <Button className="w-full gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold shadow-sm">
+            <MessageCircle className="h-4 w-4" />
+            Solicitar Orçamento
+          </Button>
+        </a>
+      </CardFooter>
+    </Card>
+  );
+}
