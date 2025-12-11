@@ -53,7 +53,10 @@ export function Footer() {
         </div>
       </div>
       <div className="container mx-auto px-4 mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
-        <p>&copy; {new Date().getFullYear()} Sublime Art. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Brinde a Vida. Todos os direitos reservados.</p>
+        <p className="mt-2">
+          Desenvolvido por <a href="https://www.innovaiusti.online" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Innova Iusti</a>
+        </p>
       </div>
     </footer>
   );
