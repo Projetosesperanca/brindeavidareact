@@ -9,6 +9,8 @@ import tileImage from "@assets/generated_images/personalized_ceramic_tiles_for_m
 import ecoImage from "@assets/generated_images/ecobags_and_agendas_set.png";
 import partyCupImage from "@assets/generated_images/personalized_party_cups_set.png";
 import plateImage from "@assets/generated_images/personalized_ceramic_decorative_plate.png";
+import restaurantImage from "@assets/generated_images/restaurant_personalized_items_set.png";
+import schoolKitImage from "@assets/generated_images/personalized_school_kit_set.png";
 
 export const companyInfo = {
   name: "Brinde a Vida",
@@ -21,6 +23,8 @@ export const companyInfo = {
 
 export const categories = [
   { id: "canecas", name: "Canecas e Xícaras", image: mugImage },
+  { id: "restaurantes", name: "Artigos para Restaurantes", image: restaurantImage },
+  { id: "escolar", name: "Kits Escolares Personalizados", image: schoolKitImage },
   { id: "copos", name: "Copos Personalizados", image: partyCupImage },
   { id: "pratos", name: "Pratos Decorativos", image: plateImage },
   { id: "camisetas", name: "Camisetas", image: tshirtImage },
@@ -40,6 +44,22 @@ export const products = [
     image: mugImage,
     description: "Transforme cada gole em uma experiência única e afetuosa. Nossas canecas e xícaras de cerâmica premium são telas em branco prontas para receber sua arte, foto ou mensagem especial.\n\nCom acabamento impecável e brilho duradouro, elas não são apenas utensílios, mas veículos de emoção. Perfeitas para eternizar momentos em família, presentear colaboradores com elegância ou criar uma linha exclusiva de produtos para sua marca. Cada peça é tratada com carinho para garantir que a imagem permaneça vibrante, resistindo ao tempo e ao uso diário, assim como as memórias que elas carregam.",
     benefits: ["Material Cerâmica Premium AAA", "Design Exclusivo e Personalizado", "Alta Resistência e Durabilidade", "Presente Emocional e Funcional"]
+  },
+  {
+    id: 11,
+    name: "Artigos para Restaurantes",
+    category: "Restaurantes",
+    image: restaurantImage,
+    description: "Eleve a experiência gastronômica do seu estabelecimento com nossos artigos personalizados. Aventais, porta-copos, cardápios e jogos americanos que refletem a identidade e o cuidado do seu restaurante.\n\nCada detalhe conta para criar uma atmosfera acolhedora e profissional. Nossos produtos são feitos com materiais fáceis de limpar e duráveis, garantindo que sua marca esteja sempre impecável à mesa. Personalize com seu logo e cores para criar uma identidade visual coesa que encanta os clientes e valoriza cada prato servido.",
+    benefits: ["Identidade Visual Profissional", "Materiais Duráveis e Laváveis", "Fortalecimento da Marca", "Experiência do Cliente Elevada"]
+  },
+  {
+    id: 12,
+    name: "Kits Escolares Personalizados",
+    category: "Escolar",
+    image: schoolKitImage,
+    description: "Organização e alegria para a volta às aulas! Nossos kits escolares personalizados incluem squeezes, toalhas, bonés e etiquetas com o nome do aluno, tudo coordenado com temas divertidos que as crianças amam.\n\nAlém de evitar perdas e trocas de material, os kits criam um senso de pertencimento e cuidado. As etiquetas de cetim são suaves e não incomodam, ideais para uniformes, e os squeezes incentivam a hidratação. Um conjunto prático para os pais e encantador para os pequenos, feito para resistir à rotina escolar com muito estilo.",
+    benefits: ["Identificação Prática e Durável", "Itens Coordenados e Temáticos", "Evita Perdas de Material", "Incentiva a Organização"]
   },
   {
     id: 9,
@@ -80,6 +100,7 @@ export const products = [
     image: labelImage,
     description: "Sua marca merece ser assinada com elegância e sofisticação. Nossas etiquetas e fitas de cetim personalizadas são o detalhe que faz toda a diferença na percepção de valor do seu produto.\n\nIdeais para artesãos, costureiras e marcas de moda que desejam transmitir profissionalismo e cuidado em cada entrega. Com impressão nítida e material de brilho sutil, elas transformam embalagens e peças de roupa em verdadeiros presentes. É a finalização perfeita que encanta o cliente antes mesmo de ele ver o produto principal, fortalecendo sua identidade no mercado.",
     benefits: ["Valorização do Produto Artesanal", "Acabamento Profissional e Elegante", "Fortalecimento de Branding", "Versatilidade para Embalagens"]
+    
   },
   {
     id: 5,
@@ -116,5 +137,5 @@ export const products = [
 ];
 
 export const galleryImages = [
-  heroImage, mugImage, partyCupImage, plateImage, tshirtImage, cushionImage, labelImage, mousepadImage, capImage, tileImage, ecoImage
+  heroImage, mugImage, partyCupImage, plateImage, tshirtImage, cushionImage, labelImage, mousepadImage, capImage, tileImage, ecoImage, restaurantImage, schoolKitImage
 ];
