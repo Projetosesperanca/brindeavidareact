@@ -34,12 +34,12 @@ export function ProductCard({ product }: ProductCardProps) {
         </CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
-        <p className="text-slate-600 text-sm mb-4 line-clamp-2">{product.description}</p>
-        <ul className="space-y-1">
-          {product.benefits.slice(0, 3).map((benefit, i) => (
-            <li key={i} className="flex items-center text-xs text-slate-500">
-              <Check className="h-3 w-3 text-secondary mr-2 flex-shrink-0" />
-              {benefit}
+        <p className="text-slate-600 text-base mb-6 leading-relaxed">{product.description}</p>
+        <ul className="space-y-2">
+          {product.benefits.map((benefit, i) => (
+            <li key={i} className="flex items-start text-base text-slate-700">
+              <Check className="h-5 w-5 text-secondary mr-2 flex-shrink-0 mt-0.5" />
+              <span>{benefit}</span>
             </li>
           ))}
         </ul>
