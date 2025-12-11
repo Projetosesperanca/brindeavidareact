@@ -34,7 +34,7 @@ export function ProductCard({ product }: ProductCardProps) {
         </CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
-        <p className="text-slate-600 text-base mb-6 leading-relaxed">{product.description}</p>
+        <p className="text-slate-600 text-base mb-6 leading-relaxed text-justify whitespace-pre-line">{product.description}</p>
         <ul className="space-y-2">
           {product.benefits.map((benefit, i) => (
             <li key={i} className="flex items-start text-base text-slate-700">

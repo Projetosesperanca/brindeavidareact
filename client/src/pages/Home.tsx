@@ -30,7 +30,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading leading-tight mb-6">
               Transforme Ideias em <span className="text-secondary">Produtos Únicos</span>
             </h1>
-            <p className="text-lg md:text-xl text-slate-100 mb-8 max-w-xl leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-100 mb-8 max-w-xl leading-relaxed text-justify">
               Especialistas em brindes personalizados e fardamentos de alta qualidade. 
               Sua marca em destaque com a melhor tecnologia de sublimação.
             </p>
