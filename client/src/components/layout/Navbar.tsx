@@ -10,7 +10,6 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { href: "/sobre", label: "Sobre Nós" },
     { href: "/produtos", label: "Produtos" },
     { href: "/fardamentos", label: "Fardamentos" },
     { href: "/galeria", label: "Galeria" },
@@ -33,10 +32,10 @@ export function Navbar() {
           {links.map((link) => (
             <Link key={link.href} href={link.href}>
               <a
-                className={`text-lg font-bold px-6 py-2 rounded-xl transition-all shadow-sm border ${
+                className={`text-lg font-bold px-4 py-2 transition-all ${
                   location === link.href 
-                    ? "bg-primary text-white border-primary shadow-md scale-105" 
-                    : "bg-white text-foreground border-primary/10 hover:bg-primary hover:text-white hover:border-primary hover:shadow-md hover:-translate-y-0.5"
+                    ? "text-primary border-b-2 border-primary" 
+                    : "text-foreground hover:text-primary hover:shadow-lg"
                 }`}
               >
                 {link.label}
