@@ -14,8 +14,7 @@ import schoolKitImage from "@assets/generated_images/personalized_school_kit_set
 
 export const companyInfo = {
   name: "Brinde a Vida",
-  phone: "11987475687", 
-  secondaryPhone: "1147050191",
+  phone: "(11) 98747-5687", 
   email: "comercial@iusti.com.br",
   address: "Rua das Flores, 123 - Centro, Cidade - SP", 
   whatsappLink: (message: string) => `https://wa.me/5511987475687?text=${encodeURIComponent(message)}`
