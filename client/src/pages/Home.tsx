@@ -6,18 +6,43 @@ import { Button } from "@/components/ui/button";
 import { categories, products, companyInfo, heroImage } from "@/lib/data";
 import { ProductCard } from "@/components/ui/ProductCard";
 import { Link } from "wouter";
-import { ArrowRight, CheckCircle2, Star, Zap, ShieldCheck } from "lucide-react";
+import { ArrowRight, CheckCircle2, Star, Zap, ShieldCheck, Play, Pause } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const featuredProducts = products; // Show all products in the carousel
+  const [api, setApi] = useState<CarouselApi>();
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    api.on("autoplay:play" as any, () => setIsPlaying(true));
+    api.on("autoplay:stop" as any, () => setIsPlaying(false));
+  }, [api]);
+
+  const togglePlay = () => {
+    if (!api) return;
+    const autoplay = api.plugins().autoplay;
+    if (!autoplay) return;
+
+    if (isPlaying) {
+      autoplay.stop();
+    } else {
+      autoplay.play();
+    }
+  };
 
   return (
     <div className="min-h-screen flex flex-col font-sans">
@@ -86,8 +111,9 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="px-12">
+        <div className="px-12 relative">
           <Carousel
+            setApi={setApi}
             opts={{
               align: "start",
               loop: true,
@@ -101,7 +127,7 @@ export default function Home() {
           >
             <CarouselContent className="-ml-4">
               {featuredProducts.map((product) => (
-                <CarouselItem key={product.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={product.id} className="pl-4 md:basis-1/2 lg:basis-1/2">
                   <div className="h-full">
                     <ProductCard product={product} />
                   </div>
@@ -110,6 +136,30 @@ export default function Home() {
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
+            
+            <div className="absolute -top-16 right-0 md:top-1/2 md:-right-16 md:-translate-y-1/2 z-10 hidden md:block">
+               <Button 
+                variant="outline" 
+                size="icon" 
+                className="rounded-full bg-white/80 hover:bg-white border-primary/20 text-primary h-8 w-8 shadow-sm"
+                onClick={togglePlay}
+                title={isPlaying ? "Pausar" : "Reproduzir"}
+              >
+                {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
+              </Button>
+            </div>
+             {/* Mobile pause button position */}
+             <div className="absolute -top-12 right-0 md:hidden">
+               <Button 
+                variant="outline" 
+                size="icon" 
+                className="rounded-full bg-white/80 hover:bg-white border-primary/20 text-primary h-8 w-8 shadow-sm"
+                onClick={togglePlay}
+                title={isPlaying ? "Pausar" : "Reproduzir"}
+              >
+                {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
+              </Button>
+            </div>
           </Carousel>
         </div>
       </Section>
