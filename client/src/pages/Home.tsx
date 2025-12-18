@@ -3,11 +3,10 @@ import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/button";
-import { categories, products, companyInfo } from "@/lib/data";
+import { categories, products, companyInfo, heroImage } from "@/lib/data";
 import { ProductCard } from "@/components/ui/ProductCard";
 import { Link } from "wouter";
 import { ArrowRight, CheckCircle2, Star, Zap, ShieldCheck } from "lucide-react";
-import heroImage from "@assets/generated_images/hero_image_of_personalized_sublimation_products.png";
 
 export default function Home() {
   const featuredProducts = products.slice(0, 4);
