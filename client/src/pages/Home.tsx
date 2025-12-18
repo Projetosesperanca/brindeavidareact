@@ -58,7 +58,7 @@ export default function Home() {
             { icon: ShieldCheck, title: "Durabilidade", desc: "Estampas que não desbotam e resistem ao tempo." },
             { icon: CheckCircle2, title: "Personalização Total", desc: "Sua arte, seu logo, do jeito que você imaginar." },
           ].map((item, index) => (
-            <div key={index} className="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div key={index} className="flex flex-col items-center text-center p-6 bg-white border-wavy shadow-sm hover:shadow-md transition-shadow">
               <div className="h-16 w-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary">
                 <item.icon className="h-8 w-8" />
               </div>
