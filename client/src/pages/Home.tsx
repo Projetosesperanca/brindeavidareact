@@ -137,27 +137,15 @@ export default function Home() {
             <CarouselPrevious />
             <CarouselNext />
             
-            <div className="absolute -top-16 right-0 md:top-1/2 md:-right-16 md:-translate-y-1/2 z-10 hidden md:block">
+            <div className="flex justify-center mt-6">
                <Button 
                 variant="outline" 
                 size="icon" 
-                className="rounded-full bg-white/80 hover:bg-white border-primary/20 text-primary h-8 w-8 shadow-sm"
+                className="rounded-full bg-white/80 hover:bg-white border-primary/20 text-primary h-10 w-10 shadow-sm"
                 onClick={togglePlay}
                 title={isPlaying ? "Pausar" : "Reproduzir"}
               >
-                {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
-              </Button>
-            </div>
-             {/* Mobile pause button position */}
-             <div className="absolute -top-12 right-0 md:hidden">
-               <Button 
-                variant="outline" 
-                size="icon" 
-                className="rounded-full bg-white/80 hover:bg-white border-primary/20 text-primary h-8 w-8 shadow-sm"
-                onClick={togglePlay}
-                title={isPlaying ? "Pausar" : "Reproduzir"}
-              >
-                {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
+                {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
               </Button>
             </div>
           </Carousel>
