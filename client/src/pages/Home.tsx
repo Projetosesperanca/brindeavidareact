@@ -7,9 +7,16 @@ import { categories, products, companyInfo, heroImage } from "@/lib/data";
 import { ProductCard } from "@/components/ui/ProductCard";
 import { Link } from "wouter";
 import { ArrowRight, CheckCircle2, Star, Zap, ShieldCheck } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Home() {
-  const featuredProducts = products.slice(0, 4);
+  const featuredProducts = products.slice(0, 6); // Show first 6 as featured
 
   return (
     <div className="min-h-screen flex flex-col font-sans">
@@ -78,10 +85,26 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
+        <div className="px-12">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {featuredProducts.map((product) => (
+                <CarouselItem key={product.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="h-full">
+                    <ProductCard product={product} />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </Section>
 
