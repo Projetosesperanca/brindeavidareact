@@ -59,7 +59,7 @@ export const products = [
     name: "Kits Escolares Personalizados",
     category: "Escolar",
     image: schoolKitImage,
-    description: "Organização e alegria para a volta às aulas! Nossos kits escolares personalizados incluem squeezes, toalhas, bonés e etiquetas com o nome do aluno, tudo coordenado com temas divertidos que as crianças amam.\n\nAlém de evitar perdas e trocas de material, os kits criam um senso de pertencimento e cuidado. As etiquetas de cetim são suaves e não incomodam, ideais para uniformes, e os squeezes incentivam a hidratação. Um conjunto prático para os pais e encantador para os pequenos, feito para resistir à rotina escolar com muito estilo.",
+    description: "Organização e alegria para a volta às aulas! Nossos kits escolares personalizados incluem garrafinhas, toalhas, bonés e etiquetas com o nome do aluno, tudo coordenado com temas divertidos que as crianças amam.\n\nAlém de evitar perdas e trocas de material, os kits criam um senso de pertencimento e cuidado. As etiquetas de cetim são suaves e não incomodam, ideais para uniformes, e as garrafinhas incentivam a hidratação. Um conjunto prático para os pais e encantador para os pequenos, feito para resistir à rotina escolar com muito estilo.",
     benefits: ["Identificação Prática e Durável", "Itens Coordenados e Temáticos", "Evita Perdas de Material", "Incentiva a Organização"]
   },
   {
@@ -124,7 +124,7 @@ export const products = [
     name: "Azulejos para Lápide",
     category: "Azulejos",
     image: tileImage,
-    description: "Uma homenagem eterna repleta de respeito e saudade. Nossos azulejos personalizados para lápides são produzidos com técnicas especiais que garantem resistência às intempéries, sol e chuva, mantendo a imagem e a mensagem intactas por muito mais tempo.\n\nEntendemos a delicadeza deste momento e tratamos cada peça com o máximo cuidado, criando artes que honram a memória de quem partiu. Disponíveis em diversos tamanhos, eles permitem adicionar fotos, datas e frases de carinho, criando um tributo digno e duradouro que conforta o coração.",
+    description: "Uma homenagem eterna repleta de respeito e saudade. Nossos azulejos personalizados para lápides são produzidos com técnicas especiais que garantem resistência às intempéries, ao sol e à chuva, mantendo a imagem e a mensagem intactas por muito mais tempo.\n\nEntendemos a delicadeza deste momento e tratamos cada peça com o máximo cuidado, criando artes que honram a memória de quem partiu. Disponíveis em diversos tamanhos, eles permitem adicionar fotos, datas e frases de carinho, criando um tributo digno e duradouro que conforta o coração.",
     benefits: ["Resistência Sol e Chuva", "Homenagem Digna e Duradoura", "Personalização Respeitosa", "Acabamento de Alta Qualidade"]
   },
   {
