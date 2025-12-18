@@ -135,14 +135,15 @@
 }
 
 .border-wavy {
-  border: 4px double #8E5A50;
+  border: 3px dotted #8E5A50;
   border-radius: 16px;
-  box-shadow: 0 4px 6px -1px rgba(142, 90, 80, 0.1), 0 2px 4px -1px rgba(142, 90, 80, 0.06);
+  background-clip: padding-box;
+  box-shadow: 6px 6px 0px 0px rgba(142, 90, 80, 0.15);
   transition: all 0.3s ease;
 }
 
 .border-wavy:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 15px -3px rgba(142, 90, 80, 0.15), 0 4px 6px -2px rgba(142, 90, 80, 0.1);
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px 0px rgba(142, 90, 80, 0.25);
   border-color: #B05B55;
 }
