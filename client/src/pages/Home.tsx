@@ -14,6 +14,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 export default function Home() {
   const featuredProducts = products.slice(0, 6); // Show first 6 as featured
@@ -91,6 +92,11 @@ export default function Home() {
               align: "start",
               loop: true,
             }}
+            plugins={[
+              Autoplay({
+                delay: 4000,
+              }),
+            ]}
             className="w-full"
           >
             <CarouselContent className="-ml-4">
