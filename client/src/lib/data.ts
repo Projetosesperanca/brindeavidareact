@@ -1,4 +1,4 @@
-import heroImage from "@assets/generated_images/hero_banner_personalized_gifts_vintage_rose_theme.png";
+import heroImage from "@assets/generated_images/hero_banner_with_portuguese_text_on_gifts.png";
 import mugImage from "@assets/generated_images/personalized_mugs_with_portuguese_names.png";
 import tshirtImage from "@assets/generated_images/personalized_t-shirts_flatlay_portuguese_text.png";
 import cushionImage from "@assets/generated_images/personalized_cushions_on_sofa_portuguese_text.png";
