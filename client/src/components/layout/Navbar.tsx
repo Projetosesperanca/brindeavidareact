@@ -22,7 +22,7 @@ export function Navbar() {
         
         {/* Logo */}
         <Link href="/">
-          <a className="font-heading text-4xl md:text-5xl text-primary tracking-wide hover:scale-105 transition-transform drop-shadow-sm">
+          <a className="font-heading text-4xl md:text-5xl text-primary tracking-wide hover:scale-105 transition-transform drop-shadow-[2px_2px_0px_rgba(93,64,55,0.3)]">
             Brinde a Vida
           </a>
         </Link>

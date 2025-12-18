@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Brand */}
         <div className="space-y-4">
-          <h3 className="text-3xl font-script font-bold text-secondary">
+          <h3 className="text-3xl font-script font-bold text-secondary drop-shadow-[2px_2px_0px_rgba(93,64,55,0.5)]">
             Brinde a Vida
           </h3>
           <p className="text-slate-400 text-sm leading-relaxed">
