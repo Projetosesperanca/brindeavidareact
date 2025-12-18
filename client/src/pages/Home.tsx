@@ -42,7 +42,7 @@ export default function Home() {
               Sua marca em destaque com a melhor tecnologia de sublimação.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href={companyInfo.whatsappLink("Olá, vim pelo site e quero um orçamento.")} target="_blank" rel="noopener noreferrer">
+              <a href={companyInfo.budgetFormLink} target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-secondary hover:bg-yellow-500 text-slate-900 font-bold text-lg px-8 h-14 w-full sm:w-auto shadow-lg shadow-yellow-500/20">
                   Fazer Orçamento Agora
                 </Button>

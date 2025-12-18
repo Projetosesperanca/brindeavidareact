@@ -19,7 +19,8 @@ export const companyInfo = {
   phone: "(11) 98747-5687", 
   email: "comercial@iusti.com.br",
   address: "Rua das Flores, 123 - Centro, Cidade - SP", 
-  whatsappLink: (message: string) => `https://wa.me/5511987475687?text=${encodeURIComponent(message)}`
+  whatsappLink: (message: string) => `https://wa.me/5511987475687?text=${encodeURIComponent(message)}`,
+  budgetFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSel1-QfxqKG0ExDkuKM_s3zR-aO_FrAhylHpLOaD2WpUyHSzg/viewform?usp=publish-editor"
 };
 
 export const categories = [

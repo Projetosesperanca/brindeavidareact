@@ -46,7 +46,7 @@ export function ProductCard({ product }: ProductCardProps) {
       </CardContent>
       <CardFooter className="pt-0">
         <a
-          href={companyInfo.whatsappLink(`Olá, gostaria de um orçamento para o produto: ${product.name}`)}
+          href={companyInfo.budgetFormLink}
           target="_blank"
           rel="noopener noreferrer"
           className="w-full"

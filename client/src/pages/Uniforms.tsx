@@ -25,7 +25,7 @@ export default function Uniforms() {
               Personalização completa com sua marca.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a href={companyInfo.whatsappLink("Olá, gostaria de um orçamento para fardamentos.")} target="_blank" rel="noopener noreferrer">
+              <a href={companyInfo.budgetFormLink} target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-secondary hover:bg-yellow-500 text-slate-900 font-bold w-full sm:w-auto shadow-lg">
                   Solicitar Orçamento
                 </Button>
