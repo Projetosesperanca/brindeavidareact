@@ -17,7 +17,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 
 export default function Home() {
-  const featuredProducts = products.slice(0, 6); // Show first 6 as featured
+  const featuredProducts = products; // Show all products in the carousel
 
   return (
     <div className="min-h-screen flex flex-col font-sans">
