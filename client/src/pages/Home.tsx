@@ -82,6 +82,31 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Section */}
+      <Section className="bg-white">
+        <div className="container mx-auto max-w-4xl text-justify space-y-6">
+          <p className="text-slate-700 text-lg leading-relaxed">
+            A Brinde a Vida existe desde 2013 com um propósito claro: transformar sentimentos em presentes e momentos em memórias duradouras. Acreditamos que presentear vai muito além de um objeto — é uma forma genuína de expressar carinho, reconhecimento, gratidão e celebração da vida.
+          </p>
+
+          <p className="text-slate-700 text-lg leading-relaxed">
+            Atuamos na criação de brindes e presentes personalizados, desenvolvidos com cuidado, criatividade e atenção aos detalhes. Cada peça é pensada para carregar significado, contar histórias e fortalecer conexões, seja entre pessoas, famílias, amigos ou empresas e seus clientes.
+          </p>
+
+          <p className="text-slate-700 text-lg leading-relaxed">
+            Nossa missão é elevar a moral, despertar emoções positivas e valorizar cada conquista, por menor que ela pareça. Um presente personalizado tem o poder de motivar, inspirar e permanecer presente no dia a dia de quem o recebe, tornando-se um símbolo de afeto e lembrança.
+          </p>
+
+          <p className="text-slate-700 text-lg leading-relaxed">
+            Atendemos tanto o público final quanto o corporativo, oferecendo soluções personalizadas para ações promocionais, eventos, datas comemorativas, campanhas internas e momentos especiais. Trabalhamos com qualidade, pontualidade e compromisso, garantindo que cada brinde represente exatamente a intenção de quem presenteia.
+          </p>
+          
+          <p className="text-slate-900 font-bold text-lg leading-relaxed text-center italic">
+            "Na Brinde a Vida, celebramos histórias, relações e conquistas. Porque a vida merece ser lembrada, valorizada e brindada todos os dias."
+          </p>
+        </div>
+      </Section>
+
       {/* Differentials */}
       <Section className="bg-slate-50">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
