@@ -36,38 +36,38 @@
 
 :root {
   /* 
-   * New Shocking Pink Palette:
-   * Primary: #FF007F (Shocking Pink)
-   * Background: Very light pink/white
-   * Text: Dark Plum/Black
+   * Balanced Palette (Pink & Brown):
+   * Primary: #FF007F (Shocking Pink) - Highlights/Buttons
+   * Background: #F7EFE5 (Cream/Beige) - Base
+   * Text: #5D4037 (Dark Brown) - Readability/Contrast
    */
   
-  --background: 330 50% 99%; /* Very light pinkish white */
-  --foreground: 330 10% 20%; /* Dark grey/plum for readability */
+  --background: 36 47% 97%; /* #F7EFE5 Cream */
+  --foreground: 14 26% 29%; /* #5D4037 Dark Brown */
 
   --card: 0 0% 100%;
-  --card-foreground: 330 10% 20%;
+  --card-foreground: 14 26% 29%;
  
-  --popover: 330 50% 99%;
-  --popover-foreground: 330 10% 20%;
+  --popover: 36 47% 97%;
+  --popover-foreground: 14 26% 29%;
  
   --primary: 330 100% 50%; /* #FF007F Shocking Pink */
   --primary-foreground: 0 0% 100%; /* White */
  
-  --secondary: 330 60% 90%; /* Light Pink */
-  --secondary-foreground: 330 100% 40%; /* Darker Pink text */
+  --secondary: 14 30% 90%; /* Light Brown/Beige for secondary elements */
+  --secondary-foreground: 14 26% 29%;
  
-  --muted: 330 20% 96%;
-  --muted-foreground: 330 10% 50%;
+  --muted: 36 30% 90%;
+  --muted-foreground: 14 15% 50%;
  
-  --accent: 330 60% 95%;
-  --accent-foreground: 330 100% 50%;
+  --accent: 36 47% 93%;
+  --accent-foreground: 14 26% 29%;
  
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
 
-  --border: 330 30% 90%;
-  --input: 330 30% 90%;
+  --border: 14 20% 80%; /* Soft Brown Border */
+  --input: 14 20% 80%;
   --ring: 330 100% 50%;
  
   --radius: 0.75rem;
@@ -102,7 +102,7 @@
   }
   body {
     @apply font-sans antialiased bg-background text-foreground text-lg;
-    background-image: radial-gradient(#FF007F 0.5px, transparent 0.5px);
+    background-image: radial-gradient(#8E5A50 0.5px, transparent 0.5px);
     background-size: 20px 20px;
   }
   h1, h2, h3, h4, h5, h6 {
@@ -133,15 +133,15 @@
 }
 
 .border-wavy {
-  border: 3px dotted #FF007F;
+  border: 3px dotted #8E5A50;
   border-radius: 16px;
   background-clip: padding-box;
-  box-shadow: 6px 6px 0px 0px rgba(255, 0, 127, 0.15);
+  box-shadow: 6px 6px 0px 0px rgba(142, 90, 80, 0.15);
   transition: all 0.3s ease;
 }
 
 .border-wavy:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 8px 8px 0px 0px rgba(255, 0, 127, 0.25);
-  border-color: #D6006B;
+  box-shadow: 8px 8px 0px 0px rgba(142, 90, 80, 0.25);
+  border-color: #FF007F;
 }

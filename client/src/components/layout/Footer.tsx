@@ -4,7 +4,7 @@ import { Link } from "wouter";
 
 export function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-200 py-12 border-t border-slate-800">
+    <footer className="bg-[#5D4037] text-slate-200 py-12 border-t border-[#8E5A50]">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-center">
         {/* Brand */}
         <div className="space-y-6 flex flex-col items-center">
@@ -33,7 +33,7 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="container mx-auto px-4 mt-12 pt-8 border-t border-slate-800 text-center text-sm text-slate-500">
+      <div className="container mx-auto px-4 mt-12 pt-8 border-t border-[#8E5A50] text-center text-sm text-[#D48C84]">
         <p>&copy; {new Date().getFullYear()} Brinde a Vida. Todos os direitos reservados.</p>
         <p className="mt-2">
           Desenvolvido por <a href="https://www.innovaiusti.online" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Innova Iusti</a>
