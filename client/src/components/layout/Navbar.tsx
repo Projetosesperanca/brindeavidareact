@@ -17,12 +17,12 @@ export function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b shadow-md bg-[#F7EFE5]">
+    <header className="sticky top-0 z-50 w-full border-b shadow-md bg-[#FFF5FA]">
       <div className="container mx-auto px-4 py-4 md:py-6 flex flex-col md:flex-row items-center justify-between gap-4">
         
         {/* Logo */}
         <Link href="/">
-          <a className="font-heading text-4xl md:text-5xl text-primary tracking-wide hover:scale-105 transition-transform drop-shadow-[2px_2px_0px_rgba(93,64,55,0.3)]">
+          <a className="font-heading text-4xl md:text-5xl text-primary tracking-wide hover:scale-105 transition-transform drop-shadow-[2px_2px_0px_rgba(255,0,127,0.2)]">
             Brinde a Vida
           </a>
         </Link>
@@ -65,7 +65,7 @@ export function Navbar() {
                 <Menu className="h-8 w-8 text-primary" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-[#F7EFE5]">
+            <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-[#FFF5FA]">
               <div className="flex flex-col gap-4 mt-10">
                 {links.map((link) => (
                   <Link key={link.href} href={link.href}>

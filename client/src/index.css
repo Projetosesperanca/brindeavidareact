@@ -36,43 +36,41 @@
 
 :root {
   /* 
-   * Palette extraction from attached image:
-   * Cream/Beige Background: #F7EFE5 (approx 36 47% 93%)
-   * Pastel Pink: #FADCD9 (approx 6 68% 91%)
-   * Darker Rose/Mauve: #D48C84 (approx 6 51% 67%)
-   * Brown/Bronze Text: #8E5A50 (approx 10 29% 44%)
-   * Dark Brown for accents: #5D4037 (approx 14 26% 29%)
+   * New Shocking Pink Palette:
+   * Primary: #FF007F (Shocking Pink)
+   * Background: Very light pink/white
+   * Text: Dark Plum/Black
    */
   
-  --background: 36 47% 97%; /* Very light cream */
-  --foreground: 14 26% 29%; /* Dark Brown */
+  --background: 330 50% 99%; /* Very light pinkish white */
+  --foreground: 330 10% 20%; /* Dark grey/plum for readability */
 
   --card: 0 0% 100%;
-  --card-foreground: 14 26% 29%;
+  --card-foreground: 330 10% 20%;
  
-  --popover: 36 47% 97%;
-  --popover-foreground: 14 26% 29%;
+  --popover: 330 50% 99%;
+  --popover-foreground: 330 10% 20%;
  
-  --primary: 6 51% 67%; /* Darker Rose/Mauve */
-  --primary-foreground: 36 47% 97%;
+  --primary: 330 100% 50%; /* #FF007F Shocking Pink */
+  --primary-foreground: 0 0% 100%; /* White */
  
-  --secondary: 6 68% 91%; /* Pastel Pink */
-  --secondary-foreground: 14 26% 29%;
+  --secondary: 330 60% 90%; /* Light Pink */
+  --secondary-foreground: 330 100% 40%; /* Darker Pink text */
  
-  --muted: 36 30% 90%;
-  --muted-foreground: 14 15% 50%;
+  --muted: 330 20% 96%;
+  --muted-foreground: 330 10% 50%;
  
-  --accent: 6 68% 95%;
-  --accent-foreground: 14 26% 29%;
+  --accent: 330 60% 95%;
+  --accent-foreground: 330 100% 50%;
  
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
 
-  --border: 6 30% 85%;
-  --input: 6 30% 85%;
-  --ring: 6 51% 67%;
+  --border: 330 30% 90%;
+  --input: 330 30% 90%;
+  --ring: 330 100% 50%;
  
-  --radius: 0.75rem; /* Softer, rounder corners */
+  --radius: 0.75rem;
 }
  
 .dark {
@@ -104,7 +102,7 @@
   }
   body {
     @apply font-sans antialiased bg-background text-foreground text-lg;
-    background-image: radial-gradient(#D48C84 0.5px, transparent 0.5px);
+    background-image: radial-gradient(#FF007F 0.5px, transparent 0.5px);
     background-size: 20px 20px;
   }
   h1, h2, h3, h4, h5, h6 {
@@ -135,15 +133,15 @@
 }
 
 .border-wavy {
-  border: 3px dotted #8E5A50;
+  border: 3px dotted #FF007F;
   border-radius: 16px;
   background-clip: padding-box;
-  box-shadow: 6px 6px 0px 0px rgba(142, 90, 80, 0.15);
+  box-shadow: 6px 6px 0px 0px rgba(255, 0, 127, 0.15);
   transition: all 0.3s ease;
 }
 
 .border-wavy:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 8px 8px 0px 0px rgba(142, 90, 80, 0.25);
-  border-color: #B05B55;
+  box-shadow: 8px 8px 0px 0px rgba(255, 0, 127, 0.25);
+  border-color: #D6006B;
 }
