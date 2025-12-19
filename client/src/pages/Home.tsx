@@ -178,7 +178,7 @@ export default function Home() {
       </Section>
 
       {/* CTA Strip */}
-      <section className="bg-primary py-16 text-white">
+      <section className="bg-primary py-8 text-white">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
           <div>
             <h2 className="text-3xl font-bold mb-2">Precisa de Fardamentos para sua Empresa?</h2>
