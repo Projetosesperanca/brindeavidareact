@@ -42,6 +42,35 @@ export default function Uniforms() {
         </div>
       </section>
 
+      {/* Importance Section - New Content */}
+      <Section className="bg-slate-50">
+        <div className="container mx-auto max-w-4xl text-justify space-y-6">
+          <h2 className="text-3xl md:text-4xl font-bold font-heading text-center mb-8 text-slate-900">
+            A Importância dos Fardamentos Profissionais e Escolares
+          </h2>
+          
+          <p className="text-slate-700 text-lg leading-relaxed">
+            Os fardamentos vão muito além de uma simples peça de roupa. Eles representam identidade, organização, segurança e profissionalismo, sendo essenciais tanto no ambiente corporativo quanto no escolar.
+          </p>
+
+          <p className="text-slate-700 text-lg leading-relaxed">
+            No ambiente profissional, o fardamento transmite credibilidade e confiança. Empresas que investem em uniformes padronizados passam uma imagem mais séria, organizada e profissional aos clientes. Além disso, o uso de fardamentos fortalece a identidade da marca, promove o sentimento de pertencimento entre os colaboradores e elimina preocupações diárias com vestuário, trazendo mais foco, conforto e produtividade no trabalho. Em muitos setores, o uniforme também é sinônimo de segurança, proteção e higiene, sendo indispensável para o bom desempenho das funções.
+          </p>
+
+          <p className="text-slate-700 text-lg leading-relaxed">
+            Já no ambiente escolar, o fardamento desempenha um papel fundamental no desenvolvimento social e educacional. Ele promove igualdade, reduz diferenças sociais, evita distrações e reforça o senso de disciplina e pertencimento à instituição. Alunos uniformizados se sentem parte de um grupo, o que contribui para um ambiente mais harmonioso, seguro e focado no aprendizado. Além disso, o uso do uniforme facilita a identificação dos estudantes e traz mais tranquilidade para pais e responsáveis.
+          </p>
+
+          <p className="text-slate-700 text-lg leading-relaxed">
+            Investir em fardamentos é investir em organização, valorização e imagem. Seja para empresas que desejam se destacar no mercado ou para escolas que buscam um ambiente mais justo e estruturado, o fardamento é uma escolha inteligente, funcional e estratégica.
+          </p>
+          
+          <p className="text-slate-900 font-bold text-lg leading-relaxed text-center italic">
+            "Mais do que vestir, o fardamento representa quem você é, o que você faz e o padrão de qualidade que você entrega. Escolher usar fardamentos é escolher profissionalismo, união e confiança."
+          </p>
+        </div>
+      </Section>
+
       {/* Types of Uniforms */}
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
