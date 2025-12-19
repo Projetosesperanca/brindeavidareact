@@ -5,26 +5,26 @@ import { Link } from "wouter";
 export function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-200 py-12 border-t border-slate-800">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-center">
         {/* Brand */}
-        <div className="space-y-4">
-          <h3 className="text-3xl font-script font-bold text-secondary drop-shadow-[2px_2px_0px_rgba(93,64,55,0.5)]">
+        <div className="space-y-6 flex flex-col items-center">
+          <h3 className="text-4xl font-script font-bold text-secondary drop-shadow-[2px_2px_0px_rgba(93,64,55,0.5)]">
             Brinde a Vida
           </h3>
-          <p className="text-slate-400 text-sm leading-relaxed">
+          <p className="text-slate-400 text-lg leading-relaxed max-w-md mx-auto">
             Presentes personalizados para eternizar momentos.
             Qualidade, carinho e dedicação em cada detalhe.
           </p>
-          <div className="flex gap-4">
-            <a href={companyInfo.instagramLink} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors"><Instagram className="h-5 w-5" /></a>
-            <a href={companyInfo.facebookLink} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors"><Facebook className="h-5 w-5" /></a>
+          <div className="flex gap-6 justify-center">
+            <a href={companyInfo.instagramLink} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors"><Instagram className="h-8 w-8" /></a>
+            <a href={companyInfo.facebookLink} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors"><Facebook className="h-8 w-8" /></a>
           </div>
         </div>
 
         {/* Links */}
-        <div className="space-y-4">
-          <h4 className="text-lg font-bold text-white">Navegação</h4>
-          <ul className="space-y-2 text-sm">
+        <div className="space-y-6 flex flex-col items-center">
+          <h4 className="text-2xl font-bold text-white">Navegação</h4>
+          <ul className="space-y-4 text-lg">
             <li><Link href="/"><a className="hover:text-secondary transition-colors">Home</a></Link></li>
             <li><Link href="/produtos"><a className="hover:text-secondary transition-colors">Produtos</a></Link></li>
             <li><Link href="/fardamentos"><a className="hover:text-secondary transition-colors">Fardamentos</a></Link></li>
@@ -32,27 +32,8 @@ export function Footer() {
             <li><Link href="/contato"><a className="hover:text-secondary transition-colors">Contato</a></Link></li>
           </ul>
         </div>
-
-        {/* Contact */}
-        <div className="space-y-4">
-          <h4 className="text-lg font-bold text-white">Contato</h4>
-          <ul className="space-y-3 text-sm">
-            <li className="flex items-center gap-3">
-              <Phone className="h-4 w-4 text-secondary" />
-              <span>{companyInfo.phone}</span>
-            </li>
-            <li className="flex items-center gap-3">
-              <Mail className="h-4 w-4 text-secondary" />
-              <span>{companyInfo.email}</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <MapPin className="h-4 w-4 text-secondary mt-1" />
-              <span>{companyInfo.address}</span>
-            </li>
-          </ul>
-        </div>
       </div>
-      <div className="container mx-auto px-4 mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+      <div className="container mx-auto px-4 mt-12 pt-8 border-t border-slate-800 text-center text-sm text-slate-500">
         <p>&copy; {new Date().getFullYear()} Brinde a Vida. Todos os direitos reservados.</p>
         <p className="mt-2">
           Desenvolvido por <a href="https://www.innovaiusti.online" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Innova Iusti</a>
