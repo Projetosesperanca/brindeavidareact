@@ -51,7 +51,7 @@ export function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button size="lg" className="gap-2 font-bold bg-[#B05B55] hover:bg-[#8F4944] text-white border-none shadow-md text-lg px-6 rounded-full animate-pulse-rose transition-transform">
+            <Button size="lg" className="gap-2 font-bold bg-[#FF007F] hover:bg-[#D6006B] text-white border-none shadow-md text-lg px-6 rounded-full animate-pulse-rose transition-transform">
               <Phone className="h-5 w-5" /> WhatsApp
             </Button>
           </a>
@@ -87,7 +87,7 @@ export function Navbar() {
                   rel="noopener noreferrer"
                   className="mt-4"
                 >
-                  <Button className="w-full gap-2 bg-[#B05B55] hover:bg-[#8F4944] text-white border-none text-lg h-14 rounded-xl shadow-md animate-pulse-rose">
+                  <Button className="w-full gap-2 bg-[#FF007F] hover:bg-[#D6006B] text-white border-none text-lg h-14 rounded-xl shadow-md animate-pulse-rose">
                     <Phone className="h-6 w-6" /> Falar no WhatsApp
                   </Button>
                 </a>

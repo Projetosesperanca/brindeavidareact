@@ -116,21 +116,21 @@
   
   @keyframes pulse-rose {
     0% {
-      box-shadow: 0 0 0 0 rgba(176, 91, 85, 0.7);
+      box-shadow: 0 0 0 0 rgba(255, 0, 127, 0.7);
       transform: scale(1);
     }
     70% {
-      box-shadow: 0 0 0 10px rgba(176, 91, 85, 0);
-      transform: scale(1.05);
+      box-shadow: 0 0 0 20px rgba(255, 0, 127, 0);
+      transform: scale(1.1);
     }
     100% {
-      box-shadow: 0 0 0 0 rgba(176, 91, 85, 0);
+      box-shadow: 0 0 0 0 rgba(255, 0, 127, 0);
       transform: scale(1);
     }
   }
   
   .animate-pulse-rose {
-    animation: pulse-rose 2s infinite;
+    animation: pulse-rose 1.5s infinite;
   }
 }
 
