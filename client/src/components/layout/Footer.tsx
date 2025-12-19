@@ -16,7 +16,7 @@ export function Footer() {
             Qualidade, carinho e dedicação em cada detalhe.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-secondary transition-colors"><Instagram className="h-5 w-5" /></a>
+            <a href={companyInfo.instagramLink} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors"><Instagram className="h-5 w-5" /></a>
             <a href={companyInfo.facebookLink} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors"><Facebook className="h-5 w-5" /></a>
           </div>
         </div>

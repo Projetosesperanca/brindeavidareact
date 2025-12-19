@@ -21,7 +21,8 @@ export const companyInfo = {
   address: "Rua das Flores, 123 - Centro, Cidade - SP", 
   whatsappLink: (message: string) => `https://wa.me/5511987475687?text=${encodeURIComponent(message)}`,
   budgetFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSel1-QfxqKG0ExDkuKM_s3zR-aO_FrAhylHpLOaD2WpUyHSzg/viewform?usp=publish-editor",
-  facebookLink: "https://www.facebook.com/BrindeaVidaPersonalizados/?locale=pt_BR"
+  facebookLink: "https://www.facebook.com/BrindeaVidaPersonalizados/?locale=pt_BR",
+  instagramLink: "https://instagram.com/brindeavida.ofc"
 };
 
 export const categories = [
