@@ -1,7 +1,6 @@
+import mugImage from "@assets/BannerPersonalizar_1772647599768.png";
+import chromeMugImage from "@assets/491270563_2154178541701428_2866912619618159045_n_1772647645752.jpg";
 import heroImage from "@assets/generated_images/hero_banner_with_portuguese_text_on_gifts.png";
-
-export { heroImage };
-import mugImage from "@assets/generated_images/personalized_mugs_with_portuguese_names.png";
 import tshirtImage from "@assets/generated_images/personalized_t-shirts_flatlay_portuguese_text.png";
 import cushionImage from "@assets/generated_images/personalized_cushions_on_sofa_portuguese_text.png";
 import labelImage from "@assets/generated_images/satin_labels_detail_portuguese_text.png";
@@ -14,19 +13,21 @@ import plateImage from "@assets/generated_images/decorative_porcelain_plate_port
 import restaurantImage from "@assets/generated_images/personalized_restaurant_items_portuguese_text.png";
 import schoolKitImage from "@assets/generated_images/personalized_school_kit_portuguese_name.png";
 
+export { heroImage };
+
 export const companyInfo = {
   name: "Brinde a Vida",
-  phone: "(11) 98747-5687", 
-  email: "comercial@iusti.com.br",
+  phone: "", 
+  email: "",
   address: "Rua das Flores, 123 - Centro, Cidade - SP", 
   whatsappLink: (message: string) => `https://wa.me/5511987475687?text=${encodeURIComponent(message)}`,
-  budgetFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSel1-QfxqKG0ExDkuKM_s3zR-aO_FrAhylHpLOaD2WpUyHSzg/viewform?usp=publish-editor",
+  budgetFormLink: "",
   facebookLink: "https://www.facebook.com/BrindeaVidaPersonalizados/?locale=pt_BR",
   instagramLink: "https://instagram.com/brindeavida.ofc"
 };
 
 export const categories = [
-  { id: "canecas", name: "Canecas e Xícaras", image: mugImage },
+  { id: "canecas", name: "Canecas Personalizadas", image: mugImage },
   { id: "restaurantes", name: "Artigos para Restaurantes", image: restaurantImage },
   { id: "escolar", name: "Kits Escolares Personalizados", image: schoolKitImage },
   { id: "copos", name: "Copos Personalizados", image: partyCupImage },
@@ -43,11 +44,19 @@ export const categories = [
 export const products = [
   {
     id: 1,
-    name: "Canecas e Xícaras Personalizadas",
+    name: "Canecas Personalizadas",
     category: "Canecas",
     image: mugImage,
-    description: "Transforme cada gole em uma experiência única e afetuosa. Nossas canecas e xícaras de cerâmica premium são telas em branco prontas para receber sua arte, foto ou mensagem especial.\n\nCom acabamento impecável e brilho duradouro, elas não são apenas utensílios, mas veículos de emoção. Perfeitas para eternizar momentos em família, presentear colaboradores com elegância ou criar uma linha exclusiva de produtos para sua marca. Cada peça é tratada com carinho para garantir que a imagem permaneça vibrante, resistindo ao tempo e ao uso diário, assim como as memórias que elas carregam.",
-    benefits: ["Material Cerâmica Premium AAA", "Design Exclusivo e Personalizado", "Alta Resistência e Durabilidade", "Presente Emocional e Funcional"]
+    description: "Nossas canecas personalizadas são o presente perfeito para transformar um simples objeto em uma memória inesquecível. Produzidas com cerâmica de alta qualidade, elas garantem um brilho impecável e uma durabilidade que resiste ao tempo. Seja para o café da manhã, para decorar o escritório ou para presentear quem você ama com uma foto especial, frase motivacional ou arte exclusiva, nossas canecas são feitas com todo o cuidado para tocar o coração e trazer alegria a cada uso.",
+    benefits: ["Cerâmica Premium de Alto Brilho", "Impressão de Alta Definição", "Resistente a Micro-ondas e Lava-louças", "Presente Afetivo Personalizado"]
+  },
+  {
+    id: 14,
+    name: "Canecas Cromadas",
+    category: "Canecas",
+    image: chromeMugImage,
+    description: "Eleve o nível do seu presente com a sofisticação das nossas canecas cromadas. Com um acabamento espelhado deslumbrante em tons de dourado, prateado e rosê, estas peças são sinônimo de luxo e exclusividade.\n\nPerfeitas para quem busca um item de destaque na decoração ou um presente que impressiona logo no primeiro olhar. A personalização ganha um toque de classe único sobre o fundo metalizado, criando um contraste elegante que valoriza cada detalhe da arte. Um item indispensável para colecionadores e para brindes corporativos de alto padrão que desejam transmitir prestígio e modernidade.",
+    benefits: ["Acabamento Espelhado Premium", "Efeito Metálico Sofisticado", "Cores: Ouro, Prata e Rosê", "Presente de Alto Impacto Visual"]
   },
   {
     id: 11,
@@ -102,16 +111,15 @@ export const products = [
     name: "Etiquetas e Fitas de Cetim",
     category: "Etiquetas",
     image: labelImage,
-    description: "Sua marca merece ser assinada com elegância e sofisticação. Nossas etiquetas e fitas de cetim personalizadas são o detalhe que faz toda a diferença na percepção de valor do seu produto.\n\nIdeais para artesãos, costureiras e marcas de moda que desejam transmitir profissionalismo e cuidado em cada entrega. Com impressão nítida e material de brilho sutil, elas transformam embalagens e peças de roupa em verdadeiros presentes. É a finalização perfeita que encanta o cliente antes mesmo de ele ver o produto principal, fortalecendo sua identidade no mercado.",
+    description: "Sua marca merece ser assinada com elegância e sofisticação. Nossas etiquetas e fitas de cetim personalizadas são o detalhe que faz toda a difference na percepção de valor do seu produto.\n\nIdeais para artesãos, costureiras e marcas de moda que desejam transmitir profissionalismo e cuidado em cada entrega. Com impressão nítida e material de brilho sutil, elas transformam embalagens e peças de roupa em verdadeiros presentes. É a finalização perfeita que encanta o cliente antes mesmo de ele ver o produto principal, fortalecendo sua identidade no mercado.",
     benefits: ["Valorização do Produto Artesanal", "Acabamento Profissional e Elegante", "Fortalecimento de Branding", "Versatilidade para Embalagens"]
-    
   },
   {
     id: 5,
     name: "Bonés Personalizados",
     category: "Bonés",
     image: capImage,
-    description: "Estilo e visibilidade que vão à cabeça. Nossos bonés personalizados combinam design moderno com alta durabilidade, sendo a escolha ideal para proteger do sol enquanto promove sua marca ou evento.\n\nDisponíveis em diversos modelos como trucker, aba curva ou reta, eles oferecem ajuste perfeito e conforto para uso prolongado. Seja para times esportivos, brindes corporativos ou coleções de moda, garantimos uma personalização que destaca seu logo ou arte com precisão. Um acessório funcional que se torna parte do estilo de vida de quem usa.",
+    description: "Estilo e visibilidade que vão à cabeça. Nossos bonés personalizados combinam design moderno com alta durabilidade, sendo a escolha ideal para proteger do sol enquanto promove sua marca ou evento.\n\nDisponíveis em diversos modelos como trucker, aba curva ou reta, eles oferecem ajuste perfeito e conforto para uso prolongado. Seja para times esportivos, brindes corporativos ou coleções de moda, garantimos uma personalização que destaca seu logo ou arte com precisão. Um acessório funcional que se torna partedo estilo de vida de quem usa.",
     benefits: ["Alta Visibilidade da Marca", "Estilo e Proteção Solar", "Modelos Ajustáveis e Confortáveis", "Brinde de Longa Duração"]
   },
   {
@@ -137,6 +145,14 @@ export const products = [
     image: ecoImage,
     description: "Sustentabilidade e organização com a cara da sua marca. Nossas ecobags e agendas personalizadas são a escolha perfeita para empresas e pessoas conscientes que buscam unir utilidade e responsabilidade ambiental.\n\nAs ecobags, resistentes e reutilizáveis, levam sua mensagem para todos os lugares, enquanto as agendas ajudam a organizar a rotina com elegância. Produtos que demonstram cuidado não apenas com quem recebe, mas também com o planeta. Ideais para kits de boas-vindas, eventos corporativos e presentes que geram impacto positivo real.",
     benefits: ["Sustentabilidade e Consciência", "Utilidade no Dia a Dia", "Fortalecimento de Vínculos", "Imagem Positiva da Marca"]
+  },
+  {
+    id: 13,
+    name: "Kits Presentes Personalizados",
+    category: "Presentes",
+    image: ecoImage,
+    description: "A arte de presentear com intenção e afeto. Nossos kits presentes reúnem itens coordenados que contam uma história e celebram conexões. De caixas corporativas a kits de aniversário, cada conjunto é montado com curadoria especial.\n\nImagine a surpresa de quem recebe um kit onde cada item foi pensado exclusivamente para ela. Além da beleza estética, nossos kits priorizam a qualidade dos produtos e a experiência de abertura (unboxing), garantindo que seu gesto de carinho seja lembrado por muito tempo como uma demonstração genuína de valorização e amor.",
+    benefits: ["Curadoria de Itens Coordenados", "Experiência de Unboxing Encantadora", "Ideal para Datas Comemorativas", "Personalização de Kit Completo"]
   }
 ];
 

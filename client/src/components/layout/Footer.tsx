@@ -28,8 +28,7 @@ export function Footer() {
             <li><Link href="/"><a className="hover:text-secondary transition-colors">Home</a></Link></li>
             <li><Link href="/produtos"><a className="hover:text-secondary transition-colors">Produtos</a></Link></li>
             <li><Link href="/fardamentos"><a className="hover:text-secondary transition-colors">Fardamentos</a></Link></li>
-            <li><Link href="/sobre"><a className="hover:text-secondary transition-colors">Sobre Nós</a></Link></li>
-            <li><Link href="/contato"><a className="hover:text-secondary transition-colors">Contato</a></Link></li>
+            <li><Link href="/galeria"><a className="hover:text-secondary transition-colors">Galeria</a></Link></li>
           </ul>
         </div>
       </div>

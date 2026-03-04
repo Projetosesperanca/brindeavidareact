@@ -45,17 +45,14 @@ export function ProductCard({ product }: ProductCardProps) {
         </ul>
       </CardContent>
       <CardFooter className="pt-0">
-        <a
-          href={companyInfo.budgetFormLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full"
+        <Button 
+          className="w-full gap-2 bg-[#FF007F] hover:bg-[#E60073] text-white font-semibold shadow-sm"
+          data-testid={`button-whatsapp-product-${product.id}`}
+          onClick={() => window.open(companyInfo.whatsappLink(`Olá! Gostaria de um orçamento para: ${product.name}`), '_blank')}
         >
-          <Button className="w-full gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold shadow-sm">
-            <MessageCircle className="h-4 w-4" />
-            Solicitar Orçamento
-          </Button>
-        </a>
+          <MessageCircle className="h-4 w-4" />
+          Solicitar Orçamento
+        </Button>
       </CardFooter>
     </Card>
   );

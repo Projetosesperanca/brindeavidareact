@@ -13,7 +13,6 @@ export function Navbar() {
     { href: "/produtos", label: "Produtos" },
     { href: "/fardamentos", label: "Fardamentos" },
     { href: "/galeria", label: "Galeria" },
-    { href: "/contato", label: "Contato" },
   ];
 
   return (
