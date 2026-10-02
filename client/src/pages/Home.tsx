@@ -3,10 +3,10 @@ import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/button";
-import { categories, products, companyInfo, heroImage } from "@/lib/data";
+import { products, companyInfo, heroImage } from "@/lib/data";
 import { ProductCard } from "@/components/ui/ProductCard";
 import { Link } from "wouter";
-import { ArrowRight, CheckCircle2, Star, Zap, ShieldCheck, Play, Pause } from "lucide-react";
+import { ArrowRight, CheckCircle2, MessageCircle, Star, Zap, ShieldCheck, Play, Pause } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -60,20 +60,45 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10 text-white">
           <div className="max-w-3xl animate-fade-in-up">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading leading-tight mb-6">
-              Transforme Ideias em <span className="text-secondary">Produtos Únicos</span>
+              Presentes, brindes e uniformes <span className="text-secondary">com a sua identidade</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-100 mb-8 max-w-xl leading-relaxed text-justify">
-              Especialistas em brindes personalizados e fardamentos de alta qualidade. 
-              Sua marca em destaque com a melhor tecnologia de sublimação.
+              Personalizamos para celebrar momentos especiais e ajudar sua marca a se destacar. Atendemos pessoas e empresas — e também podemos desenvolver sua arte.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href={companyInfo.whatsappLink("Olá! Gostaria de pedir um orçamento.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-14 w-full items-center justify-center gap-2 rounded-md bg-primary px-8 text-lg font-bold text-white shadow-lg transition-colors hover:bg-primary/90 sm:w-auto"
+              >
+                <MessageCircle className="h-5 w-5" />
+                Peça seu orçamento
+              </a>
               <Link href="/produtos">
-                <Button size="lg" className="bg-secondary hover:bg-yellow-500 text-slate-900 font-bold text-lg px-8 h-14 w-full sm:w-auto shadow-lg shadow-yellow-500/20">
-                  Ver Produtos
+                <Button size="lg" variant="outline" className="h-14 w-full border-white bg-white/10 px-8 text-lg font-bold text-white hover:bg-white hover:text-slate-900 sm:w-auto">
+                  Ver produtos
                 </Button>
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-6" aria-label="Diferenciais da Brinde a Vida">
+        <div className="container mx-auto grid grid-cols-1 gap-4 px-4 text-center sm:grid-cols-2 lg:grid-cols-4">
+          <p className="font-bold text-slate-800">Desde 2013 transformando ideias em presentes</p>
+          <p className="font-bold text-slate-800">Atendimento para pessoas e empresas</p>
+          <p className="font-bold text-slate-800">Sua arte também pode ser criada por nós</p>
+          <a
+            href={companyInfo.googleReviewsLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 font-bold text-primary hover:underline"
+          >
+            <Star className="h-5 w-5 fill-current" aria-hidden="true" />
+            Leia nossas avaliações no Google
+          </a>
         </div>
       </section>
 
@@ -172,18 +197,83 @@ export default function Home() {
         </div>
       </Section>
 
+      <Section className="bg-white">
+        <div className="mx-auto max-w-4xl">
+          <div className="mb-8 text-center">
+            <h2 className="text-3xl font-bold font-heading text-slate-900 md:text-4xl">
+              Dúvidas frequentes
+            </h2>
+            <p className="mt-2 text-slate-600">
+              Veja como começar seu pedido personalizado.
+            </p>
+          </div>
+          <div className="space-y-3">
+            <details className="group rounded-xl border border-slate-200 bg-white p-5">
+              <summary className="cursor-pointer list-none font-bold text-slate-900 marker:hidden">
+                Vocês atendem pessoas físicas e empresas?
+                <span className="float-right text-primary transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+              </summary>
+              <p className="mt-3 text-slate-600">
+                Sim. Criamos presentes personalizados para momentos especiais e soluções para empresas, eventos e ações promocionais.
+              </p>
+            </details>
+            <details className="group rounded-xl border border-slate-200 bg-white p-5">
+              <summary className="cursor-pointer list-none font-bold text-slate-900 marker:hidden">
+                Posso pedir mesmo sem ter a arte pronta?
+                <span className="float-right text-primary transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+              </summary>
+              <p className="mt-3 text-slate-600">
+                Sim. Conte sua ideia e podemos desenvolver uma arte personalizada. Fale com a gente para combinar os detalhes no orçamento.
+              </p>
+            </details>
+            <details className="group rounded-xl border border-slate-200 bg-white p-5">
+              <summary className="cursor-pointer list-none font-bold text-slate-900 marker:hidden">
+                Como peço um orçamento?
+                <span className="float-right text-primary transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+              </summary>
+              <p className="mt-3 text-slate-600">
+                Escolha um produto e use o botão de orçamento para iniciar uma conversa pelo WhatsApp. Se ainda estiver decidindo, conte o que precisa e ajudamos a encontrar uma opção.
+              </p>
+            </details>
+            <details className="group rounded-xl border border-slate-200 bg-white p-5">
+              <summary className="cursor-pointer list-none font-bold text-slate-900 marker:hidden">
+                Como consulto prazo, quantidade mínima e entrega?
+                <span className="float-right text-primary transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+              </summary>
+              <p className="mt-3 text-slate-600">
+                Essas condições devem ser confirmadas no orçamento. Ao entrar em contato, informe o produto, a quantidade desejada e para quando precisa.
+              </p>
+            </details>
+          </div>
+          <div className="mt-8 text-center">
+            <a
+              href={companyInfo.whatsappLink("Olá! Tenho uma dúvida sobre os produtos personalizados.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 font-bold text-primary hover:underline"
+            >
+              Ainda tem dúvidas? Fale com a gente <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
+        </div>
+      </Section>
+
       {/* CTA Strip */}
       <section className="bg-primary py-8 text-white">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
           <div>
             <h2 className="text-3xl font-bold mb-2">Precisa de Fardamentos para sua Empresa?</h2>
-            <p className="text-blue-100 max-w-xl">Temos condições especiais para grandes quantidades. Uniformize sua equipe com qualidade e estilo.</p>
+            <p className="max-w-xl text-white/90">Conte o que sua equipe precisa e peça um orçamento personalizado pelo WhatsApp.</p>
           </div>
-          <Link href="/fardamentos">
-            <Button size="lg" className="bg-white text-primary hover:bg-slate-100 font-bold border-none shadow-lg">
-              Conhecer Fardamentos
-            </Button>
-          </Link>
+          <a
+            href={companyInfo.whatsappLink("Olá! Gostaria de um orçamento de fardamentos para minha empresa.")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-white px-6 font-bold text-primary shadow-lg transition-colors hover:bg-slate-100"
+          >
+            <MessageCircle className="h-5 w-5" />
+            Orçar fardamentos
+          </a>
         </div>
       </section>
 

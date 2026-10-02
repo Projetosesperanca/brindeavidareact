@@ -35,11 +35,11 @@
 }
 
 :root {
-  /* 
-   * Balanced Palette (Pink & Brown):
-   * Primary: #FF007F (Shocking Pink) - Highlights/Buttons
-   * Background: #F7EFE5 (Cream/Beige) - Base
-   * Text: #5D4037 (Dark Brown) - Readability/Contrast
+  /*
+   * Raspberry and brown:
+   * Primary: #C3195D - Highlights and buttons
+   * Background: #F7EFE5 - Cream base
+   * Text: #5D4037 - Dark brown for readability
    */
   
   --background: 36 47% 97%; /* #F7EFE5 Cream */
@@ -51,7 +51,7 @@
   --popover: 36 47% 97%;
   --popover-foreground: 14 26% 29%;
  
-  --primary: 330 100% 50%; /* #FF007F Shocking Pink */
+  --primary: 336 77% 43%; /* #C3195D Raspberry */
   --primary-foreground: 0 0% 100%; /* White */
  
   --secondary: 14 30% 90%; /* Light Brown/Beige for secondary elements */
@@ -68,7 +68,7 @@
 
   --border: 14 20% 80%; /* Soft Brown Border */
   --input: 14 20% 80%;
-  --ring: 330 100% 50%;
+  --ring: 336 77% 43%;
  
   --radius: 0.75rem;
 }
@@ -112,23 +112,23 @@
     @apply text-lg md:text-xl leading-relaxed;
   }
   
-  @keyframes pulse-rose {
+  @keyframes pulse-brand {
     0% {
-      box-shadow: 0 0 0 0 rgba(255, 0, 127, 0.7);
+      box-shadow: 0 0 0 0 rgba(195, 25, 93, 0.7);
       transform: scale(1);
     }
     70% {
-      box-shadow: 0 0 0 20px rgba(255, 0, 127, 0);
+      box-shadow: 0 0 0 20px rgba(195, 25, 93, 0);
       transform: scale(1.1);
     }
     100% {
-      box-shadow: 0 0 0 0 rgba(255, 0, 127, 0);
+      box-shadow: 0 0 0 0 rgba(195, 25, 93, 0);
       transform: scale(1);
     }
   }
   
-  .animate-pulse-rose {
-    animation: pulse-rose 1.5s infinite;
+  .animate-pulse-brand {
+    animation: pulse-brand 1.5s infinite;
   }
 }
 
@@ -143,5 +143,5 @@
 .border-wavy:hover {
   transform: translate(-2px, -2px);
   box-shadow: 8px 8px 0px 0px rgba(142, 90, 80, 0.25);
-  border-color: #FF007F;
+  border-color: #C3195D;
 }

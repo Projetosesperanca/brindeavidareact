@@ -6,17 +6,24 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { companyInfo } from "@/lib/data";
-import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { Phone, Mail, Send } from "lucide-react";
 
 export default function Contact() {
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Simulate form submission or redirect to WhatsApp
-    const form = e.target as HTMLFormElement;
-    const name = (form.elements.namedItem('name') as HTMLInputElement).value;
-    const message = (form.elements.namedItem('message') as HTMLTextAreaElement).value;
-    
-    window.open(companyInfo.whatsappLink(`Olá, meu nome é ${name}. ${message}`), '_blank');
+    const formData = new FormData(e.currentTarget);
+    const name = String(formData.get("name") ?? "");
+    const email = String(formData.get("email") ?? "");
+    const phone = String(formData.get("phone") ?? "");
+    const message = String(formData.get("message") ?? "");
+    const contactMessage = [
+      `Olá, meu nome é ${name}.`,
+      `E-mail: ${email}`,
+      phone ? `Telefone: ${phone}` : "",
+      `Mensagem: ${message}`,
+    ].filter(Boolean).join("\n");
+
+    window.open(companyInfo.whatsappLink(contactMessage), "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -41,8 +48,9 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">Telefone / WhatsApp</h3>
-                  <p className="text-slate-600">{companyInfo.phone}</p>
-                  <p className="text-sm text-slate-500 mt-1">Atendimento seg. a sex. das 9h às 18h</p>
+                  <a href={`tel:+55${companyInfo.phone.replace(/\D/g, "")}`} className="text-slate-600 hover:text-primary">
+                    {companyInfo.phone}
+                  </a>
                 </div>
               </div>
 
@@ -52,24 +60,11 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">E-mail</h3>
-                  <p className="text-slate-600">{companyInfo.email}</p>
+                  <a href={`mailto:${companyInfo.email}`} className="text-slate-600 hover:text-primary">
+                    {companyInfo.email}
+                  </a>
                 </div>
               </div>
-
-              <div className="flex items-start gap-4">
-                <div className="bg-primary/10 p-3 rounded-full text-primary">
-                  <MapPin className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg">Endereço</h3>
-                  <p className="text-slate-600">{companyInfo.address}</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Map Placeholder */}
-            <div className="w-full h-64 bg-slate-200 rounded-xl mt-8 flex items-center justify-center text-slate-500">
-              <p>Mapa da Localização</p>
             </div>
           </div>
 
@@ -97,9 +92,12 @@ export default function Contact() {
                 <Textarea id="message" name="message" placeholder="Como podemos ajudar?" className="min-h-[150px]" required />
               </div>
 
-              <Button type="submit" className="w-full gap-2 bg-primary hover:bg-blue-700 text-white font-bold h-12">
-                <Send className="h-4 w-4" /> Enviar Mensagem
+              <Button type="submit" className="w-full gap-2 bg-primary hover:bg-primary/90 text-white font-bold h-12">
+                <Send className="h-4 w-4" /> Continuar pelo WhatsApp
               </Button>
+              <p className="text-sm text-slate-500 text-center">
+                Sua mensagem será preparada no WhatsApp para você revisar e enviar.
+              </p>
             </form>
           </div>
         </div>

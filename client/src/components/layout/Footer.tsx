@@ -1,5 +1,5 @@
 import { companyInfo } from "@/lib/data";
-import { Facebook, Instagram, Phone, Mail, MapPin } from "lucide-react";
+import { Facebook, Instagram, Phone, Mail, Star } from "lucide-react";
 import { Link } from "wouter";
 
 export function Footer() {
@@ -19,6 +19,23 @@ export function Footer() {
             <a href={companyInfo.instagramLink} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors"><Instagram className="h-8 w-8" /></a>
             <a href={companyInfo.facebookLink} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors"><Facebook className="h-8 w-8" /></a>
           </div>
+          <a
+            href={companyInfo.googleReviewsLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 hover:text-secondary transition-colors"
+          >
+            <Star className="h-5 w-5" aria-hidden="true" />
+            Avaliações no Google
+          </a>
+          <div className="space-y-3 text-base">
+            <a href={`tel:+55${companyInfo.phone.replace(/\D/g, "")}`} className="flex items-center justify-center gap-2 hover:text-secondary transition-colors">
+              <Phone className="h-5 w-5" /> {companyInfo.phone}
+            </a>
+            <a href={`mailto:${companyInfo.email}`} className="flex items-center justify-center gap-2 hover:text-secondary transition-colors">
+              <Mail className="h-5 w-5" /> {companyInfo.email}
+            </a>
+          </div>
         </div>
 
         {/* Links */}
@@ -27,6 +44,7 @@ export function Footer() {
           <ul className="space-y-4 text-lg">
             <li><Link href="/"><a className="hover:text-secondary transition-colors">Home</a></Link></li>
             <li><Link href="/produtos"><a className="hover:text-secondary transition-colors">Produtos</a></Link></li>
+            <li><Link href="/produtos#servicos-graficos"><a className="hover:text-secondary transition-colors">Serviços gráficos</a></Link></li>
             <li><Link href="/fardamentos"><a className="hover:text-secondary transition-colors">Fardamentos</a></Link></li>
             <li><Link href="/galeria"><a className="hover:text-secondary transition-colors">Galeria</a></Link></li>
           </ul>
@@ -35,7 +53,7 @@ export function Footer() {
       <div className="container mx-auto px-4 mt-12 pt-8 border-t border-[#8E5A50] text-center text-sm text-[#D48C84]">
         <p>&copy; {new Date().getFullYear()} Brinde a Vida. Todos os direitos reservados.</p>
         <p className="mt-2">
-          Desenvolvido por <a href="https://www.innovaiusti.online" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Innova Iusti</a>
+          Desenvolvido por <a href="https://www.innovaiusti.site" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Innova Iusti</a>
         </p>
       </div>
     </footer>

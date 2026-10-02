@@ -7,7 +7,7 @@ export function WhatsAppButton() {
       href={companyInfo.whatsappLink("Olá! Gostaria de um orçamento.")}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#FF007F] rounded-full shadow-lg hover:bg-[#D6006B] transition-all duration-300 animate-pulse-rose"
+      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#C3195D] rounded-full shadow-lg hover:bg-[#A81450] transition-all duration-300 animate-pulse-brand"
       aria-label="Falar no WhatsApp"
     >
       <MessageCircle className="h-8 w-8 text-white fill-white" />

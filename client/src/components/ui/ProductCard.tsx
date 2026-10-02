@@ -46,7 +46,7 @@ export function ProductCard({ product }: ProductCardProps) {
       </CardContent>
       <CardFooter className="pt-0">
         <Button 
-          className="w-full gap-2 bg-[#FF007F] hover:bg-[#E60073] text-white font-semibold shadow-sm"
+          className="w-full gap-2 bg-[#C3195D] hover:bg-[#A81450] text-white font-semibold shadow-sm"
           data-testid={`button-whatsapp-product-${product.id}`}
           onClick={() => window.open(companyInfo.whatsappLink(`Olá! Gostaria de um orçamento para: ${product.name}`), '_blank')}
         >

@@ -17,13 +17,13 @@ export { heroImage };
 
 export const companyInfo = {
   name: "Brinde a Vida",
-  phone: "", 
-  email: "",
-  address: "Rua das Flores, 123 - Centro, Cidade - SP", 
+  phone: "(11) 98747-5687",
+  email: "contato@brindeavida.site",
   whatsappLink: (message: string) => `https://wa.me/5511987475687?text=${encodeURIComponent(message)}`,
   budgetFormLink: "",
   facebookLink: "https://www.facebook.com/BrindeaVidaPersonalizados/?locale=pt_BR",
-  instagramLink: "https://instagram.com/brindeavida.ofc"
+  instagramLink: "https://instagram.com/brindeavida.ofc",
+  googleReviewsLink: "https://share.google/EWnqez5Z00MG3aC6w",
 };
 
 export const categories = [

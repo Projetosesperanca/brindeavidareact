@@ -11,8 +11,10 @@ export function Navbar() {
 
   const links = [
     { href: "/produtos", label: "Produtos" },
+    { href: "/produtos#servicos-graficos", label: "Gráfica" },
     { href: "/fardamentos", label: "Fardamentos" },
     { href: "/galeria", label: "Galeria" },
+    { href: "/contato", label: "Contato" },
   ];
 
   return (
@@ -21,7 +23,7 @@ export function Navbar() {
         
         {/* Logo */}
         <Link href="/">
-          <a className="font-heading text-4xl md:text-5xl text-primary tracking-wide hover:scale-105 transition-transform drop-shadow-[2px_2px_0px_rgba(255,0,127,0.2)]">
+          <a className="font-heading text-4xl md:text-5xl text-primary tracking-wide hover:scale-105 transition-transform drop-shadow-[2px_2px_0px_rgba(195,25,93,0.2)]">
             Brinde a Vida
           </a>
         </Link>
@@ -50,7 +52,7 @@ export function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button size="lg" className="gap-2 font-bold bg-[#FF007F] hover:bg-[#D6006B] text-white border-none shadow-md text-lg px-6 rounded-full animate-pulse-rose transition-transform">
+            <Button size="lg" className="gap-2 font-bold bg-[#C3195D] hover:bg-[#A81450] text-white border-none shadow-md text-lg px-6 rounded-full animate-pulse-brand transition-transform">
               <Phone className="h-5 w-5" /> WhatsApp
             </Button>
           </a>
@@ -86,7 +88,7 @@ export function Navbar() {
                   rel="noopener noreferrer"
                   className="mt-4"
                 >
-                  <Button className="w-full gap-2 bg-[#FF007F] hover:bg-[#D6006B] text-white border-none text-lg h-14 rounded-xl shadow-md animate-pulse-rose">
+                  <Button className="w-full gap-2 bg-[#C3195D] hover:bg-[#A81450] text-white border-none text-lg h-14 rounded-xl shadow-md animate-pulse-brand">
                     <Phone className="h-6 w-6" /> Falar no WhatsApp
                   </Button>
                 </a>
